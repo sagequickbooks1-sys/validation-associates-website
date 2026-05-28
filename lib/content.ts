@@ -319,6 +319,10 @@ export const services = [
       "Scalable hiring models across MSP, VMS, and direct clients",
       "Improved hiring efficiency through structured processes",
       "Enhanced candidate engagement and retention strategies",
+      "Faster access to qualified, compliant professionals - including RNs, CNAs, and Allied Healthcare talent",
+      "End-to-end credentialing and compliance support: license verification, background checks, and documentation tracking",
+      "Streamlined clinician onboarding aligned with healthcare workforce compliance standards",
+      "Fully-vetted, highly-experienced travel nurses, flexible for 8-, 13-, or 26-week assignments to meet your facility's staffing needs",
     ],
   },
   {
@@ -469,17 +473,16 @@ export const techPartners = [
   { src: "/partners-original/vmware.jpg", alt: "VMware", name: "VMware", note: "Validated infrastructure & virtualization." },
 ];
 
-// Clients - list of company names shown on the May 2026 client-supplied
-// logo collage (/public/clients-2026-trim.jpg).
+// Clients - company names shown on the final client-supplied logo collage
+// (/public/clients-final.jpg).
 export const clientLogos = [
-  "AbbVie", "Amgen", "AstraZeneca", "Avantor", "B|Braun",
-  "Bayer", "Boehringer Ingelheim", "Boston Scientific", "Bristol Myers Squibb",
-  "California Lutheran University", "Cigna",
-  "CVS Health", "Dexcom", "Edwards", "Genentech", "GSK", "Ipsen",
-  "Johnson & Johnson", "Lilly", "LISC", "Merck", "Neurocrine Biosciences",
-  "Novartis", "Novo Nordisk", "Organon", "Pfizer", "Takeda", "Teva",
-  "ThermoFisher Scientific", "UCB", "Viatris",
-  "Washington University in St Louis", "World Wide Technology",
+  "QualPac", "Merck", "Allergan", "Roche", "Sigma",
+  "Ortho-Clinical Diagnostics (J&J)", "Pfizer", "Endo Pharmaceuticals",
+  "Bausch & Lomb", "APP", "Wyeth", "Centocor", "Hospira", "Baxter",
+  "Stiefel (GSK)", "Watson Pharmaceuticals", "Patheon", "Accenture",
+  "Sanofi", "Merck Research Laboratories", "Pharmanova", "Pall", "Celltech",
+  "Fresenius Kabi", "Kinex Pharmaceuticals", "Quintiles", "Ninaza",
+  "Banner", "ACM", "Ethox",
 ];
 
 // Clients page - current site does not name clients explicitly. We mirror that
@@ -493,6 +496,42 @@ export const clientsCopy = {
     { title: "Medical-device manufacturers", body: "QSR, design controls, and post-market quality." },
     { title: "Clinical research & sponsors", body: "GLP/GCP assessments and sponsor oversight support." },
   ],
+};
+
+// Current job openings - from CURRENT JOB OPENINGS.docx (May 2026).
+// Surfaced via a button on /careers that opens /careers/openings.
+export const jobOpenings = {
+  intro:
+    "Multiple Positions Available, Herndon, VA. Travel/relocation required - jobs are performed at various unanticipated locations throughout the U.S.",
+  roles: [
+    {
+      title: "Validation Analyst / Engineer",
+      count: "7 positions",
+      body: "Analyze, design, build, test, and troubleshoot various types of medical equipment and analytical lab instruments for our clients in the life-sciences industry. Apply thorough knowledge of validating software and database systems for medical and healthcare purposes - requirements gathering, risk analysis, test-protocol generation (IQ, OQ, PQ), trace matrices, and summary reports - including cGMP and quality-system regulations. Utilize FDA compliance regulations with cGxP standards, including 21 CFR Part 11/210/211/820 and OSHA.",
+      qualifications: "Master's degree in Chemical Engineering or related fields.",
+    },
+    {
+      title: "Management Analyst (Healthcare)",
+      count: "1 position",
+      body: "Gather, analyze, and validate data to evaluate and design systems and procedures that improve workflow and quality assurance, helping management operate more efficiently. Review and evaluate healthcare projects and provide input for continued improvement. Gather requirements and generate reports in adherence to Information Asset Protection, Sarbanes-Oxley, and GxP policies. Perform gap analysis and propose new specifications to resolve change requests. Prepare and update monthly reports/metrics and highlight significant changes in management metrics, KPIs, and performance statistics.",
+      qualifications: "Master's degree in IT/Management or related fields.",
+    },
+    {
+      title: "Biomedical Engineer",
+      count: "2 positions",
+      body: "Analyze, design, build, test, and troubleshoot various types of electronic and other medical equipment/instruments. Validate analytical laboratory equipment, software, and database systems used for medical and healthcare purposes. Ensure system compliance with cGxP standards such as 21 CFR Part 11/210/211/820, OSHA, and FDA regulatory guidelines. Develop and maintain lab automation and equipment validation, collaborative technologies, and distributed control of applications in accordance with GMP and FDA regulations. Travel/relocate to various unanticipated locations to interact with clients and train users for short- and long-term projects.",
+      qualifications: "Master's degree in Biomedical Engineering or related fields.",
+    },
+    {
+      title: "Regulatory Affairs Analyst (Medical Device)",
+      count: "2 positions",
+      body: "Prepare, process, analyze, compile, and submit global regulatory submissions such as 510(k), PMA, European dossiers, and Japanese STED accurately per FDA and international regulations for new and modified medical devices. Must know current/proposed regulations, facility registration, device listing, testing standards, labels, and import/export requirements used in medical devices. Experience with Matrix, Agile, and Trackwise document-management tools. Travel/relocate to various unanticipated locations to interact with clients and train users for short- and long-term projects.",
+      qualifications: "Master's degree in Regulatory Affairs, Pharmacy, or related fields.",
+    },
+  ],
+  applyNote:
+    "Please mail resumes to Validation Associates LLC, 131 Elden St., Ste 204, Herndon, VA 20170, or email Career@validationassociates.com.",
+  eoe: "Validation Associates, LLC is an Equal Opportunity Employer M/F/V/D.",
 };
 
 // Equal Employment Opportunity statement — added per client docx (May 2026).
@@ -593,14 +632,13 @@ export const ctaImage = {
 // Boehringer Ingelheim, Boston Scientific, BMS, Cigna, CVS, Dexcom, Edwards,
 // Genentech, GSK, Ipsen, J&J, Lilly, Merck, Neurocrine, Novartis, Novo Nordisk,
 // Organon, Pfizer, Takeda, Teva, ThermoFisher, UCB, Viatris, WashU, WWT…).
-// Auto-trimmed version of CLIENTS.jfif (779x447) - whitespace and teal
-// underline removed so the logos themselves render larger inside the hero
-// frame. The teal accent is dropped intentionally per client feedback.
+// Final client-supplied logo collage (auto-trimmed to 999x641), clear and
+// high-contrast. Replaces the earlier composites.
 export const clientsCompositeImage = {
-  src: "/clients-2026-trim.jpg",
-  alt: "Client logo grid: AbbVie, Amgen, AstraZeneca, Avantor, B|Braun, Bayer, Boehringer Ingelheim, Boston Scientific, Bristol Myers Squibb, California Lutheran University, Cigna, CVS Health, Dexcom, Edwards, Genentech, GSK, Ipsen, Johnson & Johnson, Lilly, LISC, Merck, Neurocrine Biosciences, Novartis, Novo Nordisk, Organon, Pfizer, Takeda, Teva, ThermoFisher Scientific, UCB, Viatris, Washington University in St Louis, World Wide Technology",
-  width: 779,
-  height: 447,
+  src: "/clients-final.jpg",
+  alt: "Client logo grid: QualPac, Merck, Allergan, Roche, Sigma, Ortho-Clinical Diagnostics (Johnson & Johnson), Pfizer, Endo Pharmaceuticals, Bausch & Lomb, APP, Wyeth, Centocor, Hospira, Baxter, Stiefel (GSK), Watson Pharmaceuticals, Patheon, Accenture, Sanofi, Merck Research Laboratories, Pharmanova, Pall, Celltech, Fresenius Kabi, Kinex Pharmaceuticals, Quintiles, Ninaza, Banner, ACM, Ethox",
+  width: 999,
+  height: 641,
 };
 
 // Original Validation Associates contact image - boardroom photo with the

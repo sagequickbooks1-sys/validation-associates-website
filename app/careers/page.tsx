@@ -33,6 +33,12 @@ export default function CareersPage() {
               <p className="mt-6 text-lg text-white/80 leading-relaxed">
                 {careers.heroBody}
               </p>
+              <Link
+                href="/careers/openings"
+                className="mt-8 inline-flex items-center gap-2 bg-[color:var(--color-green)] hover:bg-[color:var(--color-green-deep)] text-white font-semibold px-7 py-4 transition-colors shadow-sm"
+              >
+                View Current Job Openings <ArrowRight />
+              </Link>
             </div>
             <div className="md:col-span-7 flex justify-center">
               {/* New image is near-square (1.14:1) - cap its width so it
@@ -139,18 +145,18 @@ export default function CareersPage() {
               {careers.apply}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href={`mailto:${company.careersEmail}`}
+              <Link
+                href="/careers/openings"
                 className="inline-flex items-center gap-2 bg-[color:var(--color-green)] hover:bg-[color:var(--color-green-deep)] text-white font-semibold px-7 py-4 transition-colors"
               >
-                Email your resume <ArrowRight size={16} />
-              </a>
-              <Link
-                href="/contact"
+                View Current Job Openings <ArrowRight size={16} />
+              </Link>
+              <a
+                href={`mailto:${company.careersEmail}`}
                 className="inline-flex items-center gap-2 text-[color:var(--color-navy)] border-2 border-[color:var(--color-navy)] hover:bg-[color:var(--color-navy)] hover:text-white font-semibold px-7 py-4 transition-colors"
               >
-                Get in touch
-              </Link>
+                Email your resume
+              </a>
             </div>
           </div>
         </section>
