@@ -498,6 +498,97 @@ export const clientsCopy = {
   ],
 };
 
+// Privacy Policy - source: Privacy Policy.docx (June 2026).
+export const privacyPolicy = {
+  lastUpdated: "June 2026",
+  intro: [
+    'Validation Associates LLC ("we," "us," or "our") operates the website www.validationassociates.com (the "Site"). We provide IT regulatory compliance, healthcare, and life-sciences consulting & staffing services and are committed to protecting your personal information and your right to privacy.',
+    "This Privacy Policy explains what information we collect, how we use it, and what rights you have concerning it.",
+  ],
+  sections: [
+    {
+      title: "Information We Collect",
+      paragraphs: [
+        "We collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our services, or when you contact us. The personal information that we collect depends on the context of your interactions with us and the Site, and may include:",
+      ],
+      items: [
+        {
+          label: "Contact Data",
+          body: "First and last name, email address, postal address, phone number, and other similar contact data.",
+        },
+        {
+          label: "Professional Data",
+          body: "Job title, company name, and professional background if submitted via inquiry forms.",
+        },
+        {
+          label: "Automatically Collected Data",
+          body: "We automatically collect certain information when you visit, use, or navigate the Site (such as your IP address, browser, and device characteristics). This information does not reveal your specific identity but is primarily needed to maintain the security and operation of our Site, and for our internal analytics.",
+        },
+      ],
+    },
+    {
+      title: "How We Use Your Information",
+      paragraphs: [
+        "We use personal information collected via our Site for a variety of business purposes described below:",
+      ],
+      items: [
+        { body: "To respond to user inquiries and offer support." },
+        {
+          body: "To send administrative information to you, such as updates to our terms, conditions, and policies.",
+        },
+        { body: "To deliver professional services and fulfill consulting engagements." },
+        {
+          body: "To protect our Site and maintain industry-standard security measures.",
+        },
+      ],
+    },
+    {
+      title: "SMS Communications and Third-Party Data Sharing",
+      paragraphs: [
+        "We strictly respect your privacy. Validation Associates LLC does not sell, rent, or share personal data, including mobile phone numbers and SMS opt-in consent, with third-party entities, affiliates, or partners for marketing or promotional purposes.",
+        "Any text messaging originator opt-in data and consent provided to us will be kept strictly confidential and used exclusively for direct communication between you and Validation Associates LLC regarding your specific inquiries or active consulting engagements.",
+      ],
+    },
+    {
+      title: "Disclosure of Your Information",
+      paragraphs: [
+        "We only share information in the following strictly limited situations:",
+      ],
+      items: [
+        {
+          label: "Legal Obligations",
+          body: "We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process.",
+        },
+        {
+          label: "Vital Interests and Legal Rights",
+          body: "We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, or situations involving potential threats to the safety of any person.",
+        },
+      ],
+      footnote:
+        "Note: As stated in Section 3, this does not include sharing SMS opt-in data or mobile numbers with any third parties for their own marketing or business purposes.",
+    },
+    {
+      title: "Security of Your Information",
+      paragraphs: [
+        "Given our focus on IT regulatory compliance, we take data security seriously. We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure.",
+      ],
+    },
+    {
+      title: "Your Privacy Rights",
+      paragraphs: [
+        "Depending on your location, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please contact us using the details provided below.",
+        'If you have opted in to receive SMS messages, you may opt out at any time by replying "STOP" to any message you receive from us.',
+      ],
+    },
+    {
+      title: "Contact Us",
+      paragraphs: [
+        "If you have any questions, comments and/or requests regarding this General Privacy Policy or to exercise your rights with respect to your personal information (as applicable), please contact us by email or phone.",
+      ],
+    },
+  ],
+};
+
 // Current job openings - from CURRENT JOB OPENINGS.docx (May 2026).
 // Surfaced via a button on /careers that opens /careers/openings.
 export const jobOpenings = {

@@ -103,11 +103,17 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-5 flex flex-col md:flex-row justify-between gap-3 text-xs text-white/60">
+        <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-5 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs text-white/60">
           <span>
             © {new Date().getFullYear()} {company.legalName}. All rights reserved.
           </span>
-          <span>E-Verify compliant · Equal-opportunity employer</span>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1">
+            <Link href="/privacy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="text-white/30 hidden md:inline">·</span>
+            <span>E-Verify compliant · Equal-opportunity employer</span>
+          </div>
         </div>
       </div>
     </footer>
