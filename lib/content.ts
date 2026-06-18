@@ -548,6 +548,24 @@ export const privacyPolicy = {
         "We strictly respect your privacy. Validation Associates LLC does not sell, rent, or share personal data, including mobile phone numbers and SMS opt-in consent, with third-party entities, affiliates, or partners for marketing or promotional purposes.",
         "Any text messaging originator opt-in data and consent provided to us will be kept strictly confidential and used exclusively for direct communication between you and Validation Associates LLC regarding your specific inquiries or active consulting engagements.",
       ],
+      subsections: [
+        {
+          title: "SMS Consent",
+          paragraphs: [
+            "We will not share your opt-in to an SMS campaign with any third party for purposes unrelated to providing you with the services of that campaign. We may share your Personal Data, including your SMS opt-in or consent status, with third parties that help us provide our messaging services, including but not limited to platform providers, phone companies, and any other vendors who assist us in the delivery of text messages.",
+            "All of the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.",
+          ],
+        },
+        {
+          title: "Opt-out process",
+          items: [
+            { body: "You may choose to stop receiving text messages from us at any time." },
+            { body: "To opt out, simply reply STOP or UNSUBSCRIBE to any text message you receive from us." },
+            { body: "Once we receive your opt-out request, you will be immediately removed from our messaging list and will no longer receive SMS messages from us." },
+            { body: "For assistance, reply HELP or contact us at info@validationassociates.com." },
+          ],
+        },
+      ],
     },
     {
       title: "Disclosure of Your Information",
@@ -584,6 +602,34 @@ export const privacyPolicy = {
       title: "Contact Us",
       paragraphs: [
         "If you have any questions, comments and/or requests regarding this General Privacy Policy or to exercise your rights with respect to your personal information (as applicable), please contact us by email or phone.",
+      ],
+    },
+  ],
+};
+
+// Terms & Conditions - source: Terms & Conditions.docx (June 2026).
+export const termsAndConditions = {
+  lastUpdated: "June 2026",
+  intro: [
+    'These Terms & Conditions ("Terms") govern your use of the website www.validationassociates.com (the "Site") operated by Validation Associates LLC ("we," "us," or "our"). By using the Site or communicating with us, you agree to the Terms below.',
+  ],
+  sections: [
+    {
+      title: "Text Message Communications",
+      paragraphs: [
+        "We use text messaging to communicate with you about your service. Normal messaging rates apply and the frequency of messages may vary. Mobile carriers are not liable for delayed or undelivered messages.",
+      ],
+    },
+    {
+      title: "Data Privacy",
+      paragraphs: [
+        "No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.",
+      ],
+    },
+    {
+      title: "Opt-Out Option",
+      paragraphs: [
+        "Opt out of text message communications. You may opt out of text messaging at any time by replying to any message with STOP, or by contacting us at info@validationassociates.com. This will end communications from that particular phone number. You may continue to receive service-related and other non-marketing text messages from other phone numbers managed by the company, and you may opt out of those similarly.",
       ],
     },
   ],

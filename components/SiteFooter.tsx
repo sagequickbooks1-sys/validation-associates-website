@@ -111,6 +111,9 @@ export function SiteFooter() {
             <Link href="/privacy" className="hover:text-white transition-colors">
               Privacy Policy
             </Link>
+            <Link href="/terms" className="hover:text-white transition-colors">
+              Terms &amp; Conditions
+            </Link>
             <span className="text-white/30 hidden md:inline">·</span>
             <span>E-Verify compliant · Equal-opportunity employer</span>
           </div>

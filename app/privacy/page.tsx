@@ -90,7 +90,42 @@ export default function PrivacyPage() {
                     </ul>
                   )}
 
-                  {s.footnote && (
+                  {/* Subsections (SMS Consent / Opt-out process etc.) */}
+                  {"subsections" in s && s.subsections && s.subsections.length > 0 && (
+                    <div className="mt-6 space-y-6">
+                      {s.subsections.map((sub) => (
+                        <div
+                          key={sub.title}
+                          className="bg-[color:var(--color-cream)] border border-[color:var(--color-line)] p-5 lg:p-6"
+                        >
+                          <h3 className="font-display text-lg text-[color:var(--color-navy)] mb-3">
+                            {sub.title}
+                          </h3>
+                          {"paragraphs" in sub && sub.paragraphs && (
+                            <div className="space-y-3 text-sm text-[color:var(--color-ink)] leading-relaxed">
+                              {sub.paragraphs.map((p, k) => (
+                                <p key={k}>{p}</p>
+                              ))}
+                            </div>
+                          )}
+                          {"items" in sub && sub.items && (
+                            <ul className="space-y-2 text-sm text-[color:var(--color-ink)] leading-relaxed">
+                              {sub.items.map((item, k) => (
+                                <li key={k} className="flex items-baseline gap-2">
+                                  <span className="text-[color:var(--color-green-deep)] font-bold shrink-0">
+                                    +
+                                  </span>
+                                  <span>{item.body}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {"footnote" in s && s.footnote && (
                     <p className="mt-5 text-sm text-[color:var(--color-ink-muted)] italic leading-relaxed">
                       {s.footnote}
                     </p>

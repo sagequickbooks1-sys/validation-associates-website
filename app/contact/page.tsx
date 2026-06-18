@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   company,
   offices,
@@ -229,7 +230,10 @@ export default function ContactPage() {
                 </div>
                 <div className="sm:col-span-1">
                   <label className="block text-xs font-semibold uppercase tracking-[0.14em] text-[color:var(--color-ink-muted)] mb-2">
-                    Phone
+                    Phone{" "}
+                    <span className="font-normal normal-case text-[10px] text-[color:var(--color-ink-muted)]/70">
+                      (optional)
+                    </span>
                   </label>
                   <input
                     type="tel"
@@ -262,6 +266,37 @@ export default function ContactPage() {
                     className="w-full bg-[color:var(--color-cream)] border border-[color:var(--color-line)] focus:border-[color:var(--color-navy)] px-4 py-3 outline-none text-[color:var(--color-ink)] transition-colors resize-y"
                   />
                 </div>
+
+                {/* SMS opt-in - 10DLC consent disclosure. Checkbox is optional;
+                    the form submits regardless of whether it is checked. */}
+                <div className="sm:col-span-2">
+                  <label className="flex items-start gap-3 bg-[color:var(--color-cream)] border border-[color:var(--color-line)] p-4 cursor-pointer hover:border-[color:var(--color-navy)]/40 transition-colors">
+                    <input
+                      type="checkbox"
+                      name="smsOptIn"
+                      value="yes"
+                      className="mt-1 w-4 h-4 accent-[color:var(--color-green)] shrink-0"
+                    />
+                    <span className="text-xs text-[color:var(--color-ink)] leading-relaxed">
+                      By opting in for text messages, you agree to receive appointment reminders and important updates from VALIDATION ASSOCIATES LLC at the number provided. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to unsubscribe. Reply HELP for help. View our{" "}
+                      <Link
+                        href="/privacy"
+                        className="font-semibold text-[color:var(--color-navy)] underline hover:text-[color:var(--color-green-deep)]"
+                      >
+                        Privacy Policy
+                      </Link>{" "}
+                      and{" "}
+                      <Link
+                        href="/terms"
+                        className="font-semibold text-[color:var(--color-navy)] underline hover:text-[color:var(--color-green-deep)]"
+                      >
+                        Terms &amp; Conditions
+                      </Link>{" "}
+                      for more information.
+                    </span>
+                  </label>
+                </div>
+
                 <div className="sm:col-span-2">
                   <button
                     type="submit"
@@ -270,7 +305,7 @@ export default function ContactPage() {
                     Send message <ArrowRight size={16} />
                   </button>
                   <p className="text-xs text-[color:var(--color-ink-muted)] mt-4">
-                    Form is a preview placeholder - final build will deliver to a designated company inbox with spam protection.
+                    Form is a preview placeholder - final build will deliver to a designated company inbox with spam protection. SMS opt-in is optional; the form submits with or without it.
                   </p>
                 </div>
               </form>
